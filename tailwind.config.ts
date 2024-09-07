@@ -7,10 +7,17 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    backgroundImage: {
+      'user_avatar': "url('/user_avatar.png')",
+    },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        activeState_1: "var(--activestate_bg_1)",
+        activeState_2: "var(--activestate_bg_2)",
+        border: "var(--unnamed-color-ededed)",
+        card_bg: "var(--unnamed-color-ffffff)",
       },
     },
   },
