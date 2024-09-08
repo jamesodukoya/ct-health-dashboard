@@ -5,14 +5,10 @@ import { MenuItems } from '../(data)/Templates';
 
 function Header() {
 
-    const path = usePathname();
-    // useEffect(() => {
-    //     console.log(path)
-    // }, [])
-    
+    const path = usePathname();    
 
   return (
-      <div className='mt-[18px] px-8 mx-[18px] py-[5px] bg-card_bg rounded-[70px] flex items-center justify-between'>
+      <div className='mt-[18px] px-8 mx-[18px] py-[5px] bg-background rounded-[70px] flex items-center justify-between'>
         <div>
             <a href='/'>
                 <img src='/logo.png' alt='tech care logo' className='h-12' />

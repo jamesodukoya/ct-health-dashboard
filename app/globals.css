@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #F6F7F8;
+  --background: #FFFFFF;
   --foreground: #072635;
   font-size: 16px;
   --unnamed-color-705aaa: #705AAA;
@@ -26,9 +26,8 @@
   --unnamed-color-ff6200: #FF6200;
 
   /* Font/text values */
-  --unnamed-font-family-manrope: "Manrope";
   --unnamed-font-style-normal: normal;
-  --unnamed-font-weight-800: 800px;
+  --unnamed-font-weight-800: 800;
   --unnamed-font-weight-normal: normal;
   --unnamed-font-weight-bold: bold;
   --unnamed-font-size-14: 14px;
@@ -49,7 +48,6 @@
 }
 
 body {
-  font-family: var(--unnamed-font-family-manrope);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
   font-size: var(--unnamed-font-size-14);
@@ -59,39 +57,35 @@ body {
   background-color: #F6F7F8;
 }
 
-h1 {
-  font-family: var(--unnamed-font-family-manrope);
+h2 {
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-800);
   font-size: var(--unnamed-font-size-24);
   line-height: var(--unnamed-line-spacing-33);
   letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-072635);  
+  color: var(--foreground);  
 }
 
-h2 {
-  font-family: var(--unnamed-font-family-manrope);
+h3 {
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-bold);
   font-size: var(--unnamed-font-size-18);
   line-height: var(--unnamed-line-spacing-24);
   letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-072635);
+  color: var(--foreground);
   text-transform: var(--unnamed-text-transform-titlecase);
 }
 
 .emphasized {
-  font-family: var(--unnamed-font-family-manrope);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-bold);
   font-size: var(--unnamed-font-size-14);
   line-height: var(--unnamed-line-spacing-19);
   letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-072635);
+  color: var(--foreground);
 }
 
 .secondary {
-  font-family: var(--unnamed-font-family-manrope);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
   font-size: var(--unnamed-font-size-14);
@@ -102,6 +96,12 @@ h2 {
 
 .card {
   border-radius: 16px;
+  background-color: var(--background);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--unnamed-color-072635) #E3E4E6;
 }
 
 @layer utilities {

@@ -18,6 +18,7 @@ const config: Config = {
         activeState_2: "var(--activestate_bg_2)",
         border: "var(--unnamed-color-ededed)",
         card_bg: "var(--unnamed-color-ffffff)",
+        kebab: "var(--unnamed-color-072635)",
       },
     },
   },
