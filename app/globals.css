@@ -26,6 +26,8 @@
   --unnamed-color-ff6200: #FF6200;
 
   /* Font/text values */
+  
+  /* --manrope-font: ${manrope.style.fontFamily};         */
   --unnamed-font-style-normal: normal;
   --unnamed-font-weight-800: 800;
   --unnamed-font-weight-normal: normal;
@@ -92,6 +94,34 @@ h3 {
   line-height: var(--unnamed-line-spacing-19);
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-707070);
+}
+
+.right_card_title {
+  font: var(--unnamed-font-style-normal) normal medium var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font-weight: normal;
+  font-style: normal;
+  /* font: normal normal medium 14px/19px manrope; */
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.right_card_info {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font-weight: bold;
+  font-style: normal;
+  /* font: normal normal bold 14px/19px var(--manrope-font); */
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
 }
 
 .card {

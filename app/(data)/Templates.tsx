@@ -25,3 +25,15 @@ export const MenuItems = [
         path:'#4'
     }
 ]
+
+export interface PATIENTSDATA{
+    patientsData: {
+        [key: string]: number | string | string[]
+    }[]
+}
+
+export interface JESSICASDATA{
+    patientsData: {
+        [key: string]: number | string | string[]
+    }
+}

@@ -8,6 +8,7 @@ const manrope = Manrope({
   weight: ['400', '700', '800'],
 })
 
+
 export const metadata: Metadata = {
   title: "Coalition Technologies Healthcare Dashboard",
   description: "Healthcare analytics at its best!",
