@@ -2,6 +2,9 @@
 import { useEffect, useState } from "react";
 import PatientsList from "./_components/PatientsList";
 import PatientSummary from "./_components/PatientSummary";
+import LabResults from "./_components/LabResults";
+import DiagnosticList from "./_components/DiagnosticList";
+import DiagnosisHistory from "./_components/DiagnosisHistory";
 
 type propertyType = {
   name: string;
@@ -27,31 +30,31 @@ export default function Home() {
         });
       let patientsData = await result?.json();
       setData(patientsData);
-      let jessicasData = patientsData?.find(({ name }:propertyType) => name === "Jessica Taylor");
+      let jessicasData = await patientsData?.find(({ name }:propertyType) => name === "Jessica Taylor");
       setJessicasData(jessicasData);
     }
     fetchData();
   }, []);
 
   return (
-    <div className="px-[18px] pb-[19px] w-full flex gap-8">
-      <div className="card w-1/4  bg-card_bg py-5 mt-8 ">
+    <div className="px-[18px] pb-[19px] w-full flex gap-8 min-w-[1400px]">
+      <div className="card w-1/4  bg-card_bg py-5 mt-8 min-w-[293.6px]">
           <PatientsList patientsData={patientsData} />
       </div>
-      <div className="flex flex-col w-1/2 gap-8 mt-8">
+      <div className="flex flex-col w-1/2 gap-8 mt-8 min-w-[612.8px]">
         <div className="card h-[673px] bg-card_bg p-5">
-        <h2>I'm half</h2>
+        <DiagnosisHistory patientsData={jessicasData}/>
         </div>
         <div className="card h-[349px] bg-card_bg p-5">
-        <h2>I'm half</h2>
+        <DiagnosticList patientsData={jessicasData}/>
         </div>
       </div>  
-      <div className="flex flex-col w-1/4 gap-8 mt-[18px]">
+      <div className="flex flex-col w-1/4 gap-8 mt-[18px] min-w-[293.6px]">
         <div className="card h-[740px] bg-card_bg">
         <PatientSummary patientsData={jessicasData} />
         </div>
         <div className="card h-[296px] bg-card_bg p-5">
-        <h2>I'm quarter</h2>
+        <LabResults patientsData={jessicasData} />
         </div>
       </div>
     </div>

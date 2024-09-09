@@ -56,7 +56,9 @@ function PatientSummary({patientsData}:JESSICASDATA) {
                 </div>
                 </div>
             </div>
-            <button className='emphasized px-10 py-[11px] rounded-[41px] bg-activeState_1 ml-[73px] mb-8 mt-10'>Show All Information</button>
+            <div className='flex justify-center'>
+                <button className='emphasized px-10 py-[11px] rounded-[41px] bg-activeState_1 mb-8 mt-10'>Show All Information</button>
+            </div>
     </div>
     )
 }

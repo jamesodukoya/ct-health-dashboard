@@ -34,6 +34,44 @@ export interface PATIENTSDATA{
 
 export interface JESSICASDATA{
     patientsData: {
-        [key: string]: number | string | string[]
+        lab_results?: string[]
+        diagnostic_list?: {
+            name: string
+            description: string
+            status: string
+        }[]
+        name?: ''
+        date_of_birth?: ''
+        age?: ''
+        gender?: ''
+        phone_number?: ''
+        emergency_contact?: ''
+        insurance_type?: ''
+        diagnosis_history?: {
+            month?: ''
+            year?: ''
+            blood_pressure?: {
+                systolic?: {
+                    value: number
+                    levels: ''
+                }
+                diastolic?: {
+                    value: number
+                    levels: ''
+                }
+            }
+            heart_rate: {
+                value: number
+                levels: ''
+            }
+            respiratory_rate: {
+                value: number
+                levels: ''
+            }
+            temperature: {
+                value: number
+                levels: ''
+            }
+        }[]
     }
 }

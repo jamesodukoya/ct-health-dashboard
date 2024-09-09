@@ -8,7 +8,7 @@ function Header() {
     const path = usePathname();    
 
   return (
-      <div className='mt-[18px] px-8 mx-[18px] py-[5px] bg-background rounded-[70px] flex items-center justify-between'>
+      <div className='mt-[18px] px-8 mx-[18px] py-[5px] bg-background rounded-[70px] flex items-center justify-between className="min-w-[1251.2px]"'>
         <div>
             <a href='/'>
                 <img src='/logo.png' alt='tech care logo' className='h-12' />

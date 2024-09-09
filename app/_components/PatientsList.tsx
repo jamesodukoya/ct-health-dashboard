@@ -3,7 +3,7 @@ import { PATIENTSDATA } from "../(data)/Templates";
 function PatientsList({patientsData}:PATIENTSDATA) {
 
   return (
-    <div>
+    <div className="">
     <div className='px-5 flex justify-between mb-5'>
             <h2>Patients</h2>
             <img src='/search.svg' />
