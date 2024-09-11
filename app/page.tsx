@@ -38,12 +38,13 @@ export default function Home() {
 
   return (
     <div className="px-[18px] pb-[19px] w-full flex gap-8 min-w-[1400px]">
+      
       <div className="card w-1/4  bg-card_bg py-5 mt-8 min-w-[293.6px]">
           <PatientsList patientsData={patientsData} />
       </div>
       <div className="flex flex-col w-1/2 gap-8 mt-8 min-w-[612.8px]">
         <div className="card h-[673px] bg-card_bg p-5">
-        <DiagnosisHistory patientsData={jessicasData}/>
+          <DiagnosisHistory patientsData={jessicasData} />
         </div>
         <div className="card h-[349px] bg-card_bg p-5">
         <DiagnosticList patientsData={jessicasData}/>
@@ -57,6 +58,7 @@ export default function Home() {
         <LabResults patientsData={jessicasData} />
         </div>
       </div>
+      
     </div>
   );
 }

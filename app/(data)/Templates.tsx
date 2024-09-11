@@ -33,7 +33,7 @@ export interface PATIENTSDATA{
 }
 
 export interface JESSICASDATA{
-    patientsData: {
+    patientsData?: {
         lab_results?: string[]
         diagnostic_list?: {
             name: string

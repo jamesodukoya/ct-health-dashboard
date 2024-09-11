@@ -26,8 +26,6 @@
   --unnamed-color-ff6200: #FF6200;
 
   /* Font/text values */
-  
-  /* --manrope-font: ${manrope.style.fontFamily};         */
   --unnamed-font-style-normal: normal;
   --unnamed-font-weight-800: 800;
   --unnamed-font-weight-normal: normal;
@@ -40,14 +38,24 @@
   --unnamed-line-spacing-24: 24px;
   --unnamed-line-spacing-33: 33px;
   --unnamed-text-transform-titlecase: titlecase;
+
+  
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+@font-face {
+  font-family: "Manrope";
+  src: url("/Manrope-Regular.woff2");
+}
+
+
+.manrope{
+  font-family: var(--font-manrope);
+}
+
+.handjet{
+  font-family: 'Handjet';
+}
+
 
 body {
   font-style: var(--unnamed-font-style-normal);

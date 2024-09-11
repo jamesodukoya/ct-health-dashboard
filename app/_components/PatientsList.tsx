@@ -9,7 +9,7 @@ function PatientsList({patientsData}:PATIENTSDATA) {
             <img src='/search.svg' />
         </div>
     <div className="overflow-y-scroll max-h-[941px] mt-5">
-      {patientsData.map((patient, index) => (
+      {patientsData?.map((patient, index) => (
         <div key={index} id='container' className={`flex justify-between items-center py-4 pl-5 pr-4 hover:bg-activeState_2 ${patient.name==="Jessica Taylor"&&'bg-activeState_2'}`}>
           <div className="flex gap-3 items-center">
             <img src={`${patient?.profile_picture}`} className="h-12 rounded-full" />

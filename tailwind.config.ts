@@ -10,6 +10,9 @@ const config: Config = {
     backgroundImage: {
       'user_avatar': "url('/user_avatar.png')",
     },
+    fontSize: {
+      bp: ['22px', '30px'],
+    },
     extend: {
       colors: {
         background: "var(--background)",
