@@ -154,7 +154,7 @@ function DiagnosisHistory({ patientsData }: JESSICASDATA) {
                 <p className='mt-[17px]'>{patientsData?.diagnosis_history?.[0].temperature.levels}</p>
             </div>
             <div className='w-1/3 p-4 h-full rounded-xl bg-[#FFE6F1]'>
-                <img src='/heartBPM.svg' className='h-24 w-24 bg-contain rounded-full'/>
+                <img src='/HeartBPM.svg' className='h-24 w-24 bg-contain rounded-full'/>
                 <h3 className='diagnosis_heading mt-4'>Heart Rate</h3>
                 <p className='diagnosis_info'>{`${patientsData?.diagnosis_history?.[0].heart_rate.value===undefined?'':patientsData?.diagnosis_history?.[0].heart_rate.value} bpm`}</p>
                 <div className='flex gap-2 mt-[17px]'>
