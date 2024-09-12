@@ -12,8 +12,8 @@ type propertyType = {
 
 export default function Home() {
   
-  const username = process.env.NEXT_PUBLIC_USERNAME;
-  const password = process.env.NEXT_PUBLIC_PASSWORD;
+  const username = env.NEXT_PUBLIC_USERNAME;
+  const password = env.NEXT_PUBLIC_PASSWORD;
   const auth = btoa(`${username}:${password}`);
 
   const [patientsData, setData] = useState([]);
