@@ -5,6 +5,10 @@ import PatientSummary from "./_components/PatientSummary";
 import LabResults from "./_components/LabResults";
 import DiagnosticList from "./_components/DiagnosticList";
 import DiagnosisHistory from "./_components/DiagnosisHistory";
+import {
+  env,
+  nextTick,
+} from 'node:process';
 
 type propertyType = {
   name: string;
