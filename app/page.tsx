@@ -5,6 +5,7 @@ import PatientSummary from "./_components/PatientSummary";
 import LabResults from "./_components/LabResults";
 import DiagnosticList from "./_components/DiagnosticList";
 import DiagnosisHistory from "./_components/DiagnosisHistory";
+import * as process from 'node:process';
 import {
   env,
   nextTick,
@@ -16,8 +17,8 @@ type propertyType = {
 
 export default function Home() {
   
-  const username = env.NEXT_PUBLIC_USERNAME;
-  const password = env.NEXT_PUBLIC_PASSWORD;
+  const username = process.env.NEXT_PUBLIC_USERNAME;
+  const password = process.env.NEXT_PUBLIC_PASSWORD;
   const auth = btoa(`${username}:${password}`);
 
   const [patientsData, setData] = useState([]);
