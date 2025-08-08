@@ -6,7 +6,7 @@ import LabResults from "./_components/LabResults";
 import DiagnosticList from "./_components/DiagnosticList";
 import DiagnosisHistory from "./_components/DiagnosisHistory";
 
-export const runtime = 'edge'
+// export const runtime = 'edge'
 
 type propertyType = {
   name: string;
